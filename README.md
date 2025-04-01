@@ -1,5 +1,9 @@
 # ROT13 Encryption
 
+ROT13 ("rotate by 13 places") is a simple letter substitution cipher that replaces a letter with the 13th letter after it in the alphabet.
+
+---
+
 1. **str.maketrans** creates a translation table to replace characters in a string.
 2. **The first argument** is the list of original characters: all lowercase followed by all uppercase ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ').
 
@@ -10,6 +14,8 @@
     Concatenating them gives: 'nopqrstuvwxyzabcdefghijklm' (ROT13 for lowercase).
     - For uppercase (string.ascii_uppercase):
     Same logic: string.ascii_uppercase[13:] ('NOPQRSTUVWXYZ') + string.ascii_uppercase[:13] ('ABCDEFGHIJKLM') → 'NOPQRSTUVWXYZABCDEFGHIJKLM' (ROT13 for uppercase).
+
+---
 
 ```bash
 # Encryption

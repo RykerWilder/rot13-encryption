@@ -17,7 +17,7 @@ ROT13 ("rotate by 13 places") is a simple letter substitution cipher that replac
 
 ---
 
-```bash
+```python
 # Encryption
 message = "Hello World!"
 encrypted = rot13(message)
